@@ -6,7 +6,7 @@ tf.disable_v2_behavior()
 tf.compat.v1.disable_resource_variables()
 
 
-# Load training and test data (MNISt dataset):
+# Load training and test data (MNIST dataset):
 dataLoader = keras.datasets.mnist
 (features, labels), (testFeatures, testLabels) = dataLoader.load_data()
 onehot_labels = np.zeros((labels.shape[0], 10))
@@ -17,6 +17,7 @@ testFeatures = testFeatures
 onehot_testLabels = np.zeros((testLabels.shape[0], 10))
 onehot_testLabels[np.arange(testLabels.shape[0]), testLabels] = 1
 testLabels = onehot_testLabels
+
 # Set the parameters:
 NumClasses = 10
 BatchLength = 16
