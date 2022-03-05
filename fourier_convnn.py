@@ -30,8 +30,8 @@ NumKernels = [16, 32, 64]
 
 
 # spectral pooling size:
-#         1div2  - 0
-#         6div8 - 1
+#         1/2  - 0
+#         6/8 - 1
 specPoolSize = 0
 
 
