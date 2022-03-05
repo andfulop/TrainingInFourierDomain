@@ -22,7 +22,6 @@ testLabels = onehot_testLabels
 NumClasses = 10
 BatchLength = 16
 Size = [28, 28, 1]
-length_of_signal = Size
 NumIteration = 40001
 LearningRate = 1e-4
 EvalFreq = 1000
